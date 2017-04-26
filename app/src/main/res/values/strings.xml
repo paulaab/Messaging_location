@@ -1,0 +1,8 @@
+<resources>
+        <string name="app_name">GEOM App</string>
+        <string name="title_activity_main">Map</string>
+        <string name="warningAccident">Accident Alert</string>
+        <string name="warningTrafficJam">Traffic Jam Alert</string>
+
+
+</resources>

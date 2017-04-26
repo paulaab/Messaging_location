@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=89:77:91:94:00:3C:72:4B:61:20:49:00:50:84:CA:B1:78:C6:FC:18%3Bcom.vodafone.innogaragepb.geomessaging
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    89:77:91:94:00:3C:72:4B:61:20:49:00:50:84:CA:B1:78:C6:FC:18
+
+    SHA-1 certificate fingerprint:
+    89:77:91:94:00:3C:72:4B:61:20:49:00:50:84:CA:B1:78:C6:FC:18
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDEbzWEXJVJRVnj9-O4W6mNKfp7wMKvQe8</string>
+</resources>

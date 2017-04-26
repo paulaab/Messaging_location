@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- Layout for the map itself-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.vodafone.innogaragepb.geomapp.MainActivity" />
+    </LinearLayout>
+
+    <!--Layout for buttons that send warnings and messages-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/accidentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="@string/warningAccident"
+            android:theme="@style/AppTheme.ButtonSend" />
+
+        <Button
+            android:id="@+id/trafficjamButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="@string/warningTrafficJam"
+            android:theme="@style/AppTheme.ButtonStop" />
+
+        <Button
+            android:id="@+id/speedlimitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="Speed Limit"
+            android:theme="@style/AppTheme.ButtonStop" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/receiveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="Receive"
+            android:theme="@style/AppTheme.ButtonStart" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="Stop"
+            android:theme="@style/AppTheme.ButtonStop" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:paddingTop="10dp"
+            android:text="Send"
+            android:theme="@style/AppTheme.ButtonStart" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
